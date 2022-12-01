@@ -18,14 +18,14 @@ public class Ejercicio {
 			if(menu==1) {
 				System.out.print("Inserte la cantidad de números a generar: ");
 				NumerosAleatorios.cantidad = sc.nextInt();
-				numeros.numerosAleatorios(NumerosAleatorios.cantidad);
+				NumerosAleatorios.numerosAleatorios(NumerosAleatorios.cantidad);
 			}
 			else if(menu==2) {
 				System.out.print("Inserte la cantidad de números a generar: ");
 				NumerosAleatorios.cantidad = sc.nextInt();
 				System.out.print("Inserte el valor máximo de los números aleatorios: ");
 				NumerosAleatorios.valormaximo = sc.nextInt();
-				numeros.numerosAleatorios(NumerosAleatorios.cantidad, NumerosAleatorios.valormaximo);
+				NumerosAleatorios.numerosAleatorios(NumerosAleatorios.cantidad, NumerosAleatorios.valormaximo);
 			}
 			else {
 				System.out.print("Inserte la cantidad de números a generar: ");
@@ -35,7 +35,7 @@ public class Ejercicio {
 				NumerosAleatorios.valormaximo++;
 				System.out.print("Inserte el valor mínimo de los números aleatorios: ");
 				NumerosAleatorios.valorminimo = sc.nextInt();
-				numeros.numerosAleatorios(NumerosAleatorios.cantidad, NumerosAleatorios.valormaximo, NumerosAleatorios.valorminimo);
+				NumerosAleatorios.numerosAleatorios(NumerosAleatorios.cantidad, NumerosAleatorios.valormaximo, NumerosAleatorios.valorminimo);
 			}
 		}
 		else {
