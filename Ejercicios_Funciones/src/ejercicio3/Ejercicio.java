@@ -8,7 +8,6 @@ public class Ejercicio {
 		int menu;
 		
 		final Scanner sc = new Scanner(System.in);
-		final NumerosAleatorios numeros = new NumerosAleatorios();
 		
 		System.out.println("¿Qué acción desea realizar?\n 1. Recibir n números aleatorios\n 2. Recibir n números aleatorios con un valor máximo\n 3. Recibir n números aleatorios con un máximo y un mínimo");
 		System.out.print("Inserte aquí su respuesta: ");
