@@ -13,20 +13,20 @@ public class Main {
 		System.out.print("Inserte aquí su respuesta: ");
 		menu =sc.nextInt();
 		
-		if(menu>=1&&menu<=3) {
-			if(menu==1) {
+		switch(menu) {
+			case 1:
 				System.out.print("Inserte la cantidad de números a generar: ");
 				NumerosAleatorios.cantidad = sc.nextInt();
 				NumerosAleatorios.numerosAleatorios(NumerosAleatorios.cantidad);
-			}
-			else if(menu==2) {
+				break;
+			case 2:
 				System.out.print("Inserte la cantidad de números a generar: ");
 				NumerosAleatorios.cantidad = sc.nextInt();
 				System.out.print("Inserte el valor máximo de los números aleatorios: ");
 				NumerosAleatorios.valormaximo = sc.nextInt();
 				NumerosAleatorios.numerosAleatorios(NumerosAleatorios.cantidad, NumerosAleatorios.valormaximo);
-			}
-			else {
+				break;
+			case 3:
 				System.out.print("Inserte la cantidad de números a generar: ");
 				NumerosAleatorios.cantidad = sc.nextInt();
 				System.out.print("Inserte el valor máximo de los números aleatorios: ");
@@ -35,10 +35,10 @@ public class Main {
 				System.out.print("Inserte el valor mínimo de los números aleatorios: ");
 				NumerosAleatorios.valorminimo = sc.nextInt();
 				NumerosAleatorios.numerosAleatorios(NumerosAleatorios.cantidad, NumerosAleatorios.valormaximo, NumerosAleatorios.valorminimo);
-			}
-		}
-		else {
-			System.out.println("ERROR: Valor introducido incorrecto");
+				break;
+			default:
+				System.out.println("ERROR: Valor introducido incorrecto");
+				break;
 		}
 		sc.close();
 
