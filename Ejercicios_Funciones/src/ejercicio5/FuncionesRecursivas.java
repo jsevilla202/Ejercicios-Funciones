@@ -34,8 +34,22 @@ public class FuncionesRecursivas {
 		return resultado;
 	}
 	
+	/*
+	 * ALTERNATIVA
+	 * 
+	 * 	static int serieFibonacci(int numero) {
+		int resultado;
+		if(numero<=1) {
+			resultado = 1;
+		}
+		else {
+			resultado = serieFibonacci(numero-1)+serieFibonacci(numero-2);
+		}
+		return resultado;
+	}
+	 */
 	static int serieFibonacci(int numero) {
-		if(numero>2) {
+		if(numero<=1) {
 			aux = resultado1;
 			resultado1 = resultado2;
 			resultado2 = aux+resultado2;
