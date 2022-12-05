@@ -5,8 +5,8 @@ public class FuncionesRecursivas {
 	static int numero;
 	static int n;
 	static double a;
-	static int resultado1 = 0;
-	static int resultado2 = 1;
+	static int resultado1 = 1;
+	static int resultado2 = 2;
 	static int aux;
 	
 	static int sumatorio(int numero) {
@@ -49,7 +49,7 @@ public class FuncionesRecursivas {
 	}
 	 */
 	static int serieFibonacci(int numero) {
-		if(numero<=1) {
+		if(numero>2) {
 			aux = resultado1;
 			resultado1 = resultado2;
 			resultado2 = aux+resultado2;
